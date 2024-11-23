@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme -->
+    <style name="Theme.Rosyappproject" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item> <!-- Use purple_500 -->
+        <item name="colorPrimaryVariant">@color/purple_700</item> <!-- Use purple_700 -->
+        <item name="colorOnPrimary">@color/white</item> <!-- Use white -->
+    </style>
+
+</resources>

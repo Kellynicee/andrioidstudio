@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.rosyappproject"> <!-- Ensure the package name is correct -->
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Rosyappproject"
+        tools:targetApi="31">
+
+        <!-- Main Activity (Warri App) -->
+        <activity
+            android:name=".WarriAppActivity"
+            android:exported="true"
+            android:label="Warri App"
+            android:theme="@style/Theme.Rosyappproject">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Home Activity -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:label="Home"
+            android:theme="@style/Theme.Rosyappproject">
+        </activity>
+
+        <!-- About Us Activity -->
+        <activity
+            android:name=".AboutUsActivity"
+            android:exported="true"
+            android:label="About Us"
+            android:theme="@style/Theme.Rosyappproject">
+        </activity>
+
+        <!-- Legislative Activity -->
+        <activity
+            android:name=".LegislativeActivity"
+            android:exported="true"
+            android:label="Legislative"
+            android:theme="@style/Theme.Rosyappproject">
+        </activity>
+
+        <!-- Contact Us Activity -->
+        <activity
+            android:name=".ContactUsActivity"
+            android:exported="true"
+            android:label="Contact Us"
+            android:theme="@style/Theme.Rosyappproject">
+        </activity>
+
+        <!-- Guessing Game Activity -->
+        <activity
+            android:name=".GuessingGameActivity"
+            android:exported="true"
+            android:label="Guessing Game"
+            android:theme="@style/Theme.Rosyappproject">
+        </activity>
+
+        <!-- Loan Calculator Activity -->
+        <activity
+            android:name=".LoanCalculatorActivity"
+            android:exported="true"
+            android:label="Loan Calculator"
+            android:theme="@style/Theme.Rosyappproject">
+        </activity>
+
+    </application>
+
+</manifest>

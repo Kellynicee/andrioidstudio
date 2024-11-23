@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loan Calculator"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#4CAF50"
+        android:layout_x="80dp"
+        android:layout_y="20dp" />
+
+    <!-- Principal Input -->
+    <EditText
+        android:id="@+id/principal_input"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Enter Principal (P)"
+        android:inputType="numberDecimal"
+        android:layout_x="40dp"
+        android:layout_y="80dp"
+        android:background="#E8E8E8"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <!-- Rate Input -->
+    <EditText
+        android:id="@+id/rate_input"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Enter Annual Interest Rate (%)"
+        android:inputType="numberDecimal"
+        android:layout_x="40dp"
+        android:layout_y="140dp"
+        android:background="#E8E8E8"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <!-- Time Input -->
+    <EditText
+        android:id="@+id/time_input"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Enter Time (years)"
+        android:inputType="numberDecimal"
+        android:layout_x="40dp"
+        android:layout_y="200dp"
+        android:background="#E8E8E8"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <!-- Frequency Input -->
+    <EditText
+        android:id="@+id/frequency_input"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Enter Times Interest Applied (n)"
+        android:inputType="number"
+        android:layout_x="40dp"
+        android:layout_y="260dp"
+        android:background="#E8E8E8"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <!-- Calculate Button -->
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Calculate"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="#4CAF50"
+        android:layout_x="80dp"
+        android:layout_y="330dp" />
+
+    <!-- Result Text -->
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:layout_x="40dp"
+        android:layout_y="410dp"
+        android:text="Accumulated Amount: " />
+</AbsoluteLayout>

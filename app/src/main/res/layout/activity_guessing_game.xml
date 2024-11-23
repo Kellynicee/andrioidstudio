@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/game_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="20dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/game_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guessing Game"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:textColor="#000000" />
+
+    <!-- Number Box 1 -->
+    <Button
+        android:id="@+id/box1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="5"
+        android:textSize="0sp"
+        android:background="#FFEB3B"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/game_title"
+        android:layout_marginTop="30dp"/>
+
+    <!-- Number Box 2 -->
+    <Button
+        android:id="@+id/box2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="10"
+        android:textSize="0sp"
+        android:background="#FFEB3B"
+        android:layout_toEndOf="@id/box1"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/box1"
+        android:layout_marginTop="90dp"/>
+
+    <!-- Result Text -->
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap a box to start!"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="#000000" />
+</RelativeLayout>
